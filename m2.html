@@ -1,0 +1,536 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+         
+        <style>
+
+
+
+           body  
+            {
+                background-image: url(02.jpg);
+                background-size: cover;
+                background-position: center;
+                font-family: sans-serif;
+                align-items: center;
+                place-items: center;
+            }
+        
+
+            h1{
+                color:rgb(244, 245, 244);
+   font-size: 3.5rem;
+   margin-left: 0px;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   text-align: center;
+   text-shadow: 0em;
+   
+   padding: 0;
+   background-color: #27ae60;
+            
+            }
+
+     h2{
+   color: rebeccapurple;
+   font-size: 2rem;
+   text-align: center;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+  
+   
+}
+ mmmm p{
+   color: var(--light-color);
+   font-size: 1.5rem;
+   list-style: 2;
+   padding: 1rem 0;
+   padding: 4rem 2rem;
+   font-family: 'Times New Roman', Times, serif;
+   
+
+
+}
+.section
+{
+   padding: 3rem;
+   justify-content: space-between;
+
+}
+
+.section img
+{
+    clip-path: circle();
+    align-items: right;
+    width: 250px;
+    height: 300px;
+}
+.section h3
+{
+    font-size: 1.7rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.section p
+{
+    font-size: 1.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.img
+{
+    width: 350px;
+    height: 450px;
+    margin: 50px;
+    align-items: center;
+    margin-left: 200PX;
+    margin-bottom: 50PX;
+
+}
+
+.img2
+{
+    width: 500px;
+    
+    margin: 50px;
+    align-items: center;
+    margin-bottom:60PX ;
+
+}
+.container{
+
+    width: 400px;
+    background: whitesmoke;
+    padding: 20px 30px ;
+    border: 1px solid #444;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 500px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+}
+
+
+ 
+.container .star-widget input
+{
+    display: none;
+}
+.star-widget label
+{
+    font-size: 40px;
+    color: #444;
+    padding: 10px;
+    float: right;
+    transition: all 0.2s ease;
+}
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label
+{
+    color:#d8e35b;
+}
+input:checked ~ label
+{
+    color:#d8e35b;
+}
+input#rate-5:checked ~ label
+{
+    color:#d8e35b;
+   
+}
+#rate-1:checked ~ form header:before
+{
+    content:"I don't like it 😖";
+}
+#rate-2:checked ~ form header:before
+{
+    content:"It is good 😊";
+}
+#rate-3:checked ~ form header:before
+{
+    content:"I  like it 😃";
+}
+#rate-4:checked ~ form header:before
+{
+    content:"It is awesome 😃";
+}
+#rate-5:checked ~ form header:before
+{
+    content:"I just love it 😍";
+}
+.container form
+{
+    display: none;
+    
+}
+input:checked ~ form
+{
+    display: block;
+}
+
+form header
+{
+    width: 100%;
+    font-size: 20px;
+    color: #d4e610;
+    font-weight: 500;
+    margin: 5px 0 20px 0;
+    text-align: center;
+    font-style: bold;
+    transition: all 0.2s ease;
+    font-family:'Times New Roman', Times, serif
+}
+
+form .textarea
+{
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+
+}
+form .textarea textarea
+{
+    height: 100%;
+    width: 100%;
+    outline: none;
+
+    border: 1px solid #333;
+    background: rgb(207, 203, 203);
+    padding: 10px;
+    font-size: 17px;
+    resize: none;
+
+}
+form .btn
+{
+    height: 45%;
+    width: 100%;
+    margin: 15px 0;
+}
+form .btn button
+{
+    height: 100%;
+    width: 100%;
+    border: 1px solid #444;
+    outline: none;
+    background:rgb(207, 203, 203);
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+form .btn button:hover
+{
+    background: #777b78;
+
+
+}
+.testimonial-box-container
+{
+    display: inline;
+    width: 100%;
+
+
+}
+.testimonial-box
+{
+    display: inline-block;
+    width: 500px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+    background-color: white;
+    padding: 20px;
+    margin-left: 135px;
+    margin-top: 30px;
+    cursor: pointer;
+    
+}
+.profile-img
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+.profile-img img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.profile
+{
+    display: flex;
+    align-items: center;
+
+}
+.name-user
+{
+    display: flex;
+    flex-direction: column;
+}
+.name-user strong
+{
+    color: #3d3d3d;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+.name-user span
+{
+    color: #979797;
+    font-size: 0.8rem;
+}
+.reviews
+{
+    color: #d8e35b;
+}
+.box-top
+{
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+    margin-bottom: 20px;
+}
+.comment p{
+    font-size: 0.9rem;
+    color: #4b4b4b;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ 
+
+
+
+ 
+
+                 
+        </style>            
+
+    </head>
+
+    <h1>Novel:- Yayati </h1>
+    <h2> About author</h2>
+
+    <div class="section">
+        <div class="text">
+             
+                
+                
+               <H3> AUTHOR:- V.S Khandekar</H3>
+                
+               <p>Vishnu Sakharam Khandekar (11 January 1898 – 2 September 1976) was a Marathi writer from Maharashtra, India. He was the first Marathi author to win the prestigious Jnanpith Award.</p>
+               
+               </div>
+               <p align="center"><img src="vis.jpg" ></p>
+
+               </p>
+
+              <H2>DESCRIPTION</H2>
+
+              <P> "'ययाती? मराठी साहित्यातील सर्वात लोकप्रिय आणि प्रतिष्ठित कादंबरी आहे. महाभारतातील पात्र ययाती आणि देवयानी यांच्या पौराणिक प्रेमकथेभोवती फिरणारी ही कादंबरी आजवर लिहिलेली सर्वोत्कृष्ट साहित्यकृती म्हणून ओळखली जाते. कादंबरीत वापरलेले चमकदार वर्णन आणि रूपकं काव्यात्मक आकर्षण वाढवतात. व्ही.एस. कांदेकर यांनी लिहिलेली ही कथा वाचकाला शेवटपर्यंत खिळवून ठेवणारी आहे. मेहता पब्लिशिंग हाऊसने १९५९ मध्ये प्रकाशित केले आहे.
+        </P>
+
+
+              
+              
+    
+            </div>
+           
+        </div>
+    </section>
+               <h2> BOOK COVER FRONT & BACK</h2>
+
+
+               <img src="m1.jpg" class="img">
+
+               <img src="yayati.jpg" class="img">
+
+               <h2>STAR RATTING</h2>
+               <div class="container">
+                 
+                <div class="star-widget">
+                    <input type="radio" name="rate" id="rate-5" >
+                    <label for="rate-5" class="fas fa-star"></label>
+                    <input type="radio" name="rate" id="rate-4" >
+                    <label for="rate-4" class="fas fa-star"></label>
+                    <input type="radio" name="rate" id="rate-3" >
+                    <label for="rate-3" class="fas fa-star"></label>
+                    <input type="radio" name="rate" id="rate-2" >
+                    <label for="rate-2" class="fas fa-star"></label>
+                    <input type="radio" name="rate" id="rate-1" >
+                    <label for="rate-1" class="fas fa-star"></label>
+                     <form action="#">
+                        <header></header>
+                        <div class="textarea">
+                            <textarea cols="30" placeholder="Dscribe your Experience..."></textarea>
+                        </div>
+                        <div class="btn">
+                            <button type="submit">Post</button>
+                        </div>
+                     </form>
+                        
+                    </form>
+                     
+                </div>
+               </div>
+
+               <section id="testimonials">
+                <div class="testimonial-heading">
+                    <h2>COMMENTS & REVIEWS</h2>
+                </div>
+
+                <div class="testimonial-box-container">
+                    <div class="testimonial-box">
+                        <div class="box-top">
+                            <div class="profile">
+                                <div class="profile-img">
+                                    <img src="koo.jpg">
+                                </div>
+                                <div class="name-user">
+                                    <strong>cooleen hoover</strong>
+                                    <span>@hoover123</span>
+                                </div>
+
+                            </div>
+                                <div class="reviews">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                           
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <p>ही सुंदर कथा प्रत्येकाने एकदा तरी वाचलीच पाहिजे, एकदा वाचायला सुरुवात केली की शेवटपर्यंत थांबणार नाही, खूप आकर्षक आहे.</p>
+                     
+                    </div>
+
+                
+
+                    </div>
+                
+                    
+                        <div class="testimonial-box-container">
+                            <div class="testimonial-box">
+                                <div class="box-top">
+                                    <div class="profile">
+                                        <div class="profile-img">
+                                            <img src="me.jpg">
+                                        </div>
+                                        <div class="name-user">
+                                            <strong>cooleen hoover</strong>
+                                            <span>@taekook123</span>
+                                        </div>
+        
+                                    </div>
+                                        <div class="reviews">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                   
+                                </div>
+                            </div>
+                            <div class="comment">
+                                <p>My firsy Marathi book which I completed in my personal record time ..could not let it down for any reason ... This is begening of my study about Marathi sahitya</p>
+                             
+                            </div>
+        
+                            </div>
+
+                            
+                
+                                <div class="testimonial-box-container">
+                                    <div class="testimonial-box">
+                                        <div class="box-top">
+                                            <div class="profile">
+                                                <div class="profile-img">
+                                                    <img src="images-38.jpg">
+                                                </div>
+                                                <div class="name-user">
+                                                    <strong>cooleen hoover</strong>
+                                                    <span>@taekook123</span>
+                                                </div>
+                
+                                            </div>
+                                                <div class="reviews">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="comment">
+                                        <p>अतिशय चांगले पुस्तक, प्रत्येक मराठी माणसाने वाचले पाहिजे, आजच्या कृत्रिम संवेदनाहीन उद्दिष्टांच्या जगात सभ्य माणसासारखे कसे जगायचे याचा स्वच्छ आणि स्पष्ट संदेश. या पुस्तकात दिलेल्या कथेपेक्षा वेगळे नसलेले आजचे वातावरण सांगता येईल.</p>
+                                     
+                                    </div>
+                
+                                    </div>
+
+                                    
+                        
+                                        <div class="testimonial-box-container">
+                                            <div class="testimonial-box">
+                                                <div class="box-top">
+                                                    <div class="profile">
+                                                        <div class="profile-img">
+                                                            <img src="images-38.jpg">
+                                                        </div>
+                                                        <div class="name-user">
+                                                            <strong>vaishali</strong>
+                                                            <span></span>
+                                                        </div>
+                        
+                                                    </div>
+                                                        <div class="reviews">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                   
+                                                </div>
+                                            </div>
+                                            <div class="comment">
+                                                <p>'ययाती? मराठी साहित्यातील सर्वात लोकप्रिय आणि प्रतिष्ठित कादंबरी आहे. महाभारतातील पात्र ययाती आणि देवयानी यांच्या पौराणिक प्रेमकथेभोवती फिरणारी ही कादंबरी आजवर लिहिलेली सर्वोत्कृष्ट साहित्यकृती म्हणून ओळखली जाते. कादंबरीत वापरलेले चमकदार वर्णन आणि रूपकं काव्यात्मक आकर्षण वाढवतात. व्ही.एस. कांदेकर यांनी लिहिलेली ही कथा वाचकाला शेवटपर्यंत खिळवून ठेवणारी आहे. </p>
+                                             
+                                            </div>
+
+                                             
+                        
+                                            </div>
+
+                
+                </div> <br><br>
+
+                 
+                    
+                               
+                            
+               </section>
+            </body>
+
+               
+                 
+
+               
+               
+
+
+
+
+
+ 
+                
+
+     
+    
+</html>

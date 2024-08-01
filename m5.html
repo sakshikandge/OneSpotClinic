@@ -1,0 +1,616 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+        <link rel="stylesheet" href="style1.css">
+         
+         
+        <style>
+
+
+
+           body  
+            {
+                background-image: url(02.jpg);
+                background-size: cover;
+                background-position: center;
+                font-family: sans-serif;
+                align-items: center;
+                place-items: center;
+            }
+        
+
+            h1{
+                color:rgb(244, 245, 244);
+   font-size: 3.5rem;
+   margin-left: 0px;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   text-align: center;
+   text-shadow: 0em;
+   
+   padding: 0;
+   background-color: #27ae60;
+            
+            }
+
+     h2{
+   color: rebeccapurple;
+   font-size: 2rem;
+   text-align: center;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+  
+   
+}
+h3{
+   color: rebeccapurple;
+   font-size: 1.5rem;
+   text-align: center;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+  
+   
+}
+ mmmm p{
+   color: var(--light-color);
+   font-size: 1.5rem;
+   list-style: 2;
+   padding: 1rem 0;
+   padding: 4rem 2rem;
+   font-family: 'Times New Roman', Times, serif;
+   
+
+
+}
+.section
+{
+   padding: 3rem;
+   justify-content: space-between;
+
+}
+
+.section img
+{
+    clip-path: circle();
+    align-items: right;
+    width: 250px;
+    height: 300px;
+}
+.section h3
+{
+    font-size: 1.7rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.section p
+{
+    font-size: 1.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.img
+{
+    width: 350px;
+    height: 450px;
+    margin: 50px;
+    align-items: center;
+    margin-left: 200PX;
+    margin-bottom: 50PX;
+
+}
+
+.img2
+{
+    width: 500px;
+    
+    margin: 50px;
+    align-items: center;
+    margin-bottom:60PX ;
+
+}
+.container{
+position: relative;
+    width: 400px;
+    background: whitesmoke;
+    padding: 20px 30px ;
+    border: 1px solid #444;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 500px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+}
+.container .post{
+        display: none;
+}
+.container .text{
+    font-size: 25px;
+    color: #666;
+    font-weight: 500;
+}
+ 
+
+
+ 
+.container .star-widget input
+{
+    display: none;
+}
+.star-widget label
+{
+    font-size: 40px;
+    color: #444;
+    padding: 10px;
+    float: right;
+    transition: all 0.2s ease;
+}
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label
+{
+    color:#d8e35b;
+}
+input:checked ~ label
+{
+    color:#d8e35b;
+}
+input#rate-5:checked ~ label
+{
+    color:#d8e35b;
+   
+}
+#rate-1:checked ~ form header:before
+{
+    content:"I don't like it 😖";
+}
+#rate-2:checked ~ form header:before
+{
+    content:"It is good 😊";
+}
+#rate-3:checked ~ form header:before
+{
+    content:"I  like it 😃";
+}
+#rate-4:checked ~ form header:before
+{
+    content:"It is awesome 😃";
+}
+#rate-5:checked ~ form header:before
+{
+    content:"I just love it 😍";
+}
+.container form
+{
+    display: none;
+    
+}
+input:checked ~ form
+{
+    display: block;
+}
+
+form header
+{
+    width: 100%;
+    font-size: 20px;
+    color: #d4e610;
+    font-weight: 500;
+    margin: 5px 0 20px 0;
+    text-align: center;
+    font-style: bold;
+    transition: all 0.2s ease;
+    font-family:'Times New Roman', Times, serif
+}
+
+form .textarea
+{
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+
+}
+form .textarea textarea
+{
+    height: 100%;
+    width: 100%;
+    outline: none;
+
+    border: 1px solid #333;
+    background: rgb(207, 203, 203);
+    padding: 10px;
+    font-size: 17px;
+    resize: none;
+
+}
+form .btn
+{
+    height: 45%;
+    width: 100%;
+    margin: 15px 0;
+}
+form .btn button
+{
+    height: 100%;
+    width: 100%;
+    border: 1px solid #444;
+    outline: none;
+    background:rgb(207, 203, 203);
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+form .btn button:hover
+{
+    background: #777b78;
+
+
+}
+.testimonial-box-container
+{
+    display: inline;
+    width: 100%;
+
+
+}
+.testimonial-box
+{
+    display: inline-block;
+    width: 500px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+    background-color: white;
+    padding: 20px;
+    margin-left: 135px;
+    margin-top: 30px;
+    cursor: pointer;
+    
+}
+.profile-img
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+.profile-img img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.profile
+{
+    display: flex;
+    align-items: center;
+
+}
+.name-user
+{
+    display: flex;
+    flex-direction: column;
+}
+.name-user strong
+{
+    color: #3d3d3d;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+.name-user span
+{
+    color: #979797;
+    font-size: 0.8rem;
+}
+.reviews
+{
+    color: #d8e35b;
+}
+.box-top
+{
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+    margin-bottom: 20px;
+}
+.comment p{
+    font-size: 0.9rem;
+    color: #4b4b4b;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.buy1:hover{
+    color:black;
+}
+@media screen and (max-width:600px) {
+
+h1{
+            color:rgb(244, 245, 244);
+font-size: 2.3rem;}
+
+h2{
+color: rebeccapurple;
+font-size: 1.5rem;
+text-align: center;
+font-family: Georgia, 'Times New Roman', Times, serif;
+
+
+}
+.h3{
+color: rebeccapurple;
+font-size: 1rem;}
+
+p{
+color: var(--light-color);
+font-size: 5px;}
+
+.section p
+{
+font-size: 1rem;}
+
+
+.section h3
+{
+font-size: 1.5rem;}
+
+.img
+{
+width: 180px;
+height: 250px;
+align-items: center;
+margin-left: 150px;
+}
+
+.section img
+{
+clip-path: circle();
+align-items: right;
+width: 150px;
+height: 250px;
+}
+.container{
+
+width: 350px;
+margin-left: 50px;}
+
+ 
+
+
+
+.testimonial-box
+{
+display: inline-block;
+width: 300px;
+margin-left: 65px;}
+
+
+}
+
+
+
+
+ 
+
+                 
+        </style>            
+
+    </head>
+
+    <h1>Novel:- उर्मिला </h1>
+    <h2> About author</h2>
+
+    <div class="section">
+        <div class="text">
+             
+                
+                
+               <H3> AUTHOR:- SAMAR PUBLICATION</H3>
+                
+               <p> 
+               
+               </div>
+               
+
+               </p>
+
+              <H2>DESCRIPTION</H2>
+
+              <P> "उर्मिला कादंबरीची वैशिष्ट्ये - 1. लक्ष्मणाची पत्नी उर्मिला हिच्या जीवनावर आधारित मराठी कादंबरी. 2. उर्मिलेच्या जन्मापासून ते मृत्यूपर्यंत समग्र जीवनाचे चित्रण करणारी पहिली कादंबरी. 3. मिथिलेतील बालपणापासून ते दोन राज्यांची राजमाता होईपर्यंत तिच्या जीवनाचे अनेक पैलू कादंबरीतून समोर येतात. 4. उत्तम दर्जाच्या कागदाचा वापर, तसेच उत्तम बांधणी. 5. 'महाकाव्य शिवप्रताप', 'तथागत' (कादंबरी) आणि 'वेडात मराठे वीर दौडले सात' लिहिणाऱ्या समर यांची नवी कांदबरी
+
+
+              
+              
+    
+            </div>
+           
+        </div>
+    </section>
+               <h2> BOOK COVER FRONT & BACK</h2>
+
+
+               <img src="b4.jpg" class="img">
+
+               <img src="URMILA.jpg" class="img">
+
+               <h2>STAR RATING</h2>
+               <div class="container">
+                <div class="post">
+                    <div class="text">Thanks For Your Rating...!</div>
+                </div>
+                <div class="star-widget">
+                    <input type="radio" name="rate" id="rate-5" >
+                    <label for="rate-5" class="fas fa-star"></label>
+                    <input type="radio" name="rate" id="rate-4" >
+                    <label for="rate-4" class="fas fa-star"></label>
+                    <input type="radio" name="rate" id="rate-3" >
+                    <label for="rate-3" class="fas fa-star"></label>
+                    <input type="radio" name="rate" id="rate-2" >
+                    <label for="rate-2" class="fas fa-star"></label>
+                    <input type="radio" name="rate" id="rate-1" >
+                    <label for="rate-1" class="fas fa-star"></label>
+                     <form action="#">
+                        <header></header>
+                        <div class="textarea">
+                            <textarea cols="30" placeholder="Dscribe your Experience..."></textarea>
+                        </div>
+                        <div class="btn">
+                            <button type="submit">Post</button>
+                        </div>
+                     </form>
+                        
+                    </form>
+                     
+                </div>
+               </div>
+
+               <section id="testimonials">
+                <div class="testimonial-heading">
+                    <h2>COMMENTS & REVIEWS</h2>
+                </div>
+
+                <div class="testimonial-box-container">
+                    <div class="testimonial-box">
+                        <div class="box-top">
+                            <div class="profile">
+                                <div class="profile-img">
+                                    <img src="IMG-20230314-WA0010.jpg">
+                                </div>
+                                <div class="name-user">
+                                    <strong>reema</strong>
+                                    <span>@errema000</span>
+                                </div>
+
+                            </div>
+                                <div class="reviews">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                           
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <p>उर्मिलाबाबत ऐकून होतो, पण या कादंबरीतून बरीच माहिती मिळाली. लेखकाने मूळ वाल्मिकी रामायणाचा आधार घेऊन ठिकठिकाणी संदर्भ देत लिहिलं आहे, हे खूपच छान झालं. तिच्या एकांतवासाचं वर्णन सुरेख.</p>
+                     
+                    </div>
+
+                
+
+                    </div>
+                
+                    
+                        <div class="testimonial-box-container">
+                            <div class="testimonial-box">
+                                <div class="box-top">
+                                    <div class="profile">
+                                        <div class="profile-img">
+                                            <img src="images-40.jpg">
+                                        </div>
+                                        <div class="name-user">
+                                            <strong>soha</strong>
+                                            <span>@soh123</span>
+                                        </div>
+        
+                                    </div>
+                                        <div class="reviews">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                   
+                                </div>
+                            </div>
+                            <div class="comment">
+                                <p>My firsT Marathi book which I completed in my personal record time ..could not let it down for any reason ... This is begening of my study about Marathi sahitya</p>
+                             
+                            </div>
+        
+                            </div>
+
+                            
+                
+                                 
+                                    
+                        
+                                        <div class="testimonial-box-container">
+                                            <div class="testimonial-box">
+                                                <div class="box-top">
+                                                    <div class="profile">
+                                                        <div class="profile-img">
+                                                            <img src="IMG-20230314-WA0006.jpg">
+                                                        </div>
+                                                        <div class="name-user">
+                                                            <strong>Priyanka</strong>
+                                                            <span>@priya456</span>
+                                                        </div>
+                        
+                                                    </div>
+                                                        <div class="reviews">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                   
+                                                </div>
+                                            </div>
+                                            <div class="comment">
+                                                <p>गैर-महाराष्ट्रीय दृष्टीकोनातून, हे पुस्तक वाचणे अवघड होते. शब्द अतिशय अडाणी भाषेत लिहिलेले आहेत जे त्यास स्थानिक भावना देण्यास मदत करतात. हे पुस्तक ऐतिहासिकदृष्ट्या इतके अचूक नाही कारण ते पात्राच्या काल्पनिक दृष्टीकोनाकडे झुकते. तरीसुद्धा, 70-80% समजण्याजोगे आणि वाचण्यासाठी खूप प्रेरणादायी आहे. </p>
+                                             
+                                            </div>
+                        
+                                            </div>
+                                            <a href="  https://amzn.eu/d/4yYdMAB" class="buy"> <h2 class="buy1">BUY NOW</h2></a>
+
+                
+                
+                </div> <br><br>
+
+                 
+                    
+                               
+                            
+               </section>
+               <a href="Marathi Novels.html"></i><h3>BACK </h3></a>
+
+               <div class="navbar">
+                <a href="Marathi Novels.html" class="fas fa-reply"></a>
+                        
+                <a href="Home.html" class="fas fa-home"></a>
+
+            </div>
+            
+            <script>
+                
+                const btn = document.querySelector ("button");
+                const post= document.querySelector(".post");
+                const widget = document.querySelector(".star-widget")
+                const editBtn = document.querySelector(".edit");
+                btn.onclick= () =>{
+                widget.style.display = "none";
+                post.style.display="block";
+                return false;
+                 
+                }
+                               </script>
+                
+            </body>
+
+               
+                 
+
+               
+               
+
+
+
+
+
+ 
+                
+
+     
+    
+</html>
