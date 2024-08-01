@@ -1,0 +1,1 @@
+Welcome to the Online Book Review Website repository! This project is my first ever frontend project and is designed for book enthusiasts to share and discover book reviews. The application focuses on displaying and reading reviews without any backend or user login functionality.
